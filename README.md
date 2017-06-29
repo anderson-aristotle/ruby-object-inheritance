@@ -4,7 +4,7 @@
 
 ## Prerequisites
 
--   [ga-wdi-boston/ruby-object](https://github.com/ga-wdi-boston/ruby-object)
+-   [ga-wdi-boston/ruby-object](https://git.generalassemb.ly/ga-wdi-boston/ruby-object)
 
 ## Objectives
 
@@ -15,7 +15,7 @@ By the end of this, developers should be able to:
 
 ## Preparation
 
-1.  [Fork and clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
+1.  [Fork and clone](https://git.generalassemb.ly/ga-wdi-boston/meta/wiki/ForkAndClone)
     this repository.
 1.  Install dependencies with `bundle install`.
 1. Create a `training` branch and checkout to it.
@@ -118,7 +118,7 @@ Please diagram the method lookup chain using the following requirements:
 ## Lab: Model Shapes Using Classes
 
 In a [previous
-lab](https://github.com/ga-wdi-boston/ruby-object#lab-creating-a-shape-class),
+lab](https://git.generalassemb.ly/ga-wdi-boston/ruby-object#lab-creating-a-shape-class),
 you were asked to create and use a `Shape` class.
 
 A `Rectangle` is a `Shape`, and a `Square` is a `Rectangle`.
