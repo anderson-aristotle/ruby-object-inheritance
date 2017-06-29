@@ -66,7 +66,7 @@ animal.eat #=> "Nom nom nom"
 animal.speak #=> NoMethodError
 ```
 
-## Ruby: Super Inheriterance
+## Ruby: Super Inheritance
 
 ```ruby
 class Animal
