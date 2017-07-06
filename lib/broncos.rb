@@ -7,6 +7,7 @@ class FootballTeam
   end
 
   def huddle
+    # some code
   end
 
   def play_game
@@ -29,6 +30,7 @@ class DenverBroncos < FootballTeam
   end
 
   def losing_dance
+    # some code
   end
 end
 
