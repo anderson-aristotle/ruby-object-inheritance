@@ -48,10 +48,6 @@ describe 'Rectangle class' do
     expect { subject.side_length = 4 }.not_to raise_error
   end
 
-  it 'has the correct area' do
-    expect(subject.calculate_area).to eq(40)
-  end
-
   describe '@color' do
     it 'is not set on initialization' do
       expect(subject.instance_variables).not_to include(:@color)
@@ -63,7 +59,7 @@ describe 'Rectangle class' do
     end
   end
 
-  describe '.calculate_area' do
+  describe 'calculate_area' do
     it 'should calculate area for a given side length' do
       expect(Rectangle.new(4, 10).calculate_area.round(2)).to eq(40)
       expect(Rectangle.new(6, 5).calculate_area.round(2)).to eq(30)
