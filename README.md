@@ -110,10 +110,10 @@ Please diagram the method lookup chain using the following requirements:
 -   The class `DenverBroncos` has an instance method called `lose`.
 -   `DenverBroncos` inherits from the class `FootballTeam`.
 -   The class `FootballTeam` has an instance method called `play_game`.
--   Diagram creating a new instance of the `DenverBroncos`: `broncos_2015 =
+-   Diagram creating a new instance of the `DenverBroncos`: `broncos_2017 =
     DenverBroncos.new`.
--   Diagram how Ruby finds and executes the methods called on `broncos_2015`:
-    `broncos_2015.lose` and `broncos_2015.play_game`.
+-   Diagram how Ruby finds and executes the methods called on `broncos_2017`:
+    `broncos_2017.lose` and `broncos_2017.play_game`.
 
 ## Lab: Model Shapes Using Classes
 
