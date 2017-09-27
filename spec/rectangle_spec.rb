@@ -2,16 +2,37 @@
 
 require_relative '../lib/rectangle.rb'
 
-describe 'Rectangle' do
+describe 'Rectangle class' do
   subject(:rectangle) { Rectangle.new(4, 10) }
 
-  it 'is a rectangle' do
+  it 'class inherits from Shape' do
+    expect(Rectangle).to be < Shape
+  end
+
+  it 'new instance is a Rectangle' do
     expect(subject).to be_a(Rectangle)
   end
 
-  it 'has required attributes' do
-    expect(subject.instance_variables).to include(:@num_sides)
-    expect(subject.instance_variables).to include(:@side_length)
+  describe 'attributes' do
+    it 'has required attributes' do
+      expect(subject.instance_variables).to include(:@num_sides)
+      expect(subject.instance_variables).to include(:@length)
+      expect(subject.instance_variables).to include(:@width)
+    end
+
+    it 'attributes have expected values' do
+      expect(subject.num_sides).to eq(4)
+    end
+
+    describe 'given Rectangle.new(3, 4)' do
+      rectangle_instance = Rectangle.new(3, 4)
+      it 'length has correct value' do
+        expect(rectangle_instance.instance_variable_get(:@length)).to eq(3)
+      end
+      it 'width has correct value' do
+        expect(rectangle_instance.instance_variable_get(:@width)).to eq(4)
+      end
+    end
   end
 
   it 'has getters for @num_sides, @side_length' do

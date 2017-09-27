@@ -125,7 +125,7 @@ A `Rectangle` is a `Shape`, and a `Square` is a `Rectangle`.
 
 Create a `Rectangle` in [`lib/rectangle.rb`](lib/rectangle.rb) that inherits
 from `Shape`. You will need to override the constructor method inside `Rectangle` to take two sides of different lengths. Since all rectangles have four sides,
-you can set a default value for `@sides` inside `Rectangle`'s constructor.
+you can set a default value for `@num_sides` inside `Rectangle`'s constructor.
 
 Test your code with `bin/rake test`.
 
