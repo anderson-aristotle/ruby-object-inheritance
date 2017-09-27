@@ -13,6 +13,14 @@ describe 'Rectangle class' do
     expect(subject).to be_a(Rectangle)
   end
 
+  it 'has attr_reader for length' do
+    expect(subject.length).to eq(4)
+  end
+
+  it 'has attr_reader for width' do
+    expect(subject.width).to eq(10)
+  end
+
   describe 'attributes' do
     it 'has required attributes' do
       expect(subject.instance_variables).to include(:@num_sides)
