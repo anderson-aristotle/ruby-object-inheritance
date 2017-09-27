@@ -2,16 +2,37 @@
 
 require_relative '../lib/square.rb'
 
-describe 'Square' do
+describe 'Square class' do
   subject(:square) { Square.new(4) }
 
-  it 'is a square' do
+  it 'class inherits from Rectangle' do
+    expect(Square).to be < Rectangle
+  end
+
+  it 'new instance is a Square' do
     expect(subject).to be_a(Square)
   end
 
-  it 'has required attributes' do
-    expect(subject.instance_variables).to include(:@num_sides)
-    expect(subject.instance_variables).to include(:@side_length)
+  describe 'attributes' do
+    it 'has required attributes' do
+      expect(subject.instance_variables).to include(:@num_sides)
+      expect(subject.instance_variables).to include(:@length)
+      expect(subject.instance_variables).to include(:@width)
+    end
+
+    it 'attributes have expected values' do
+      expect(subject.num_sides).to eq(4)
+    end
+
+    describe 'given Square.new(4)' do
+      square_instance = Square.new(4)
+      it 'length has correct value' do
+        expect(square_instance.instance_variable_get(:@length)).to eq(4)
+      end
+      it 'width has correct value' do
+        expect(square_instance.instance_variable_get(:@width)).to eq(4)
+      end
+    end
   end
 
   it 'has getters for @num_sides, @side_length' do
@@ -27,7 +48,11 @@ describe 'Square' do
     expect { subject.side_length = 4 }.not_to raise_error
   end
 
-  it 'has the correct area' do
-    expect(subject.calculate_area.floor).to eq(16)
+  describe 'calculate_area' do
+    it 'should calculate area for a given side length' do
+      expect(subject.calculate_area.round(2)).to eq(16)
+      expect(Square.new(6).calculate_area.round(2)).to eq(36)
+      expect(Square.new(9).calculate_area.round(2)).to eq(81)
+    end
   end
 end
