@@ -2,16 +2,45 @@
 
 require_relative '../lib/rectangle.rb'
 
-describe 'Rectangle' do
+describe 'Rectangle class' do
   subject(:rectangle) { Rectangle.new(4, 10) }
 
-  it 'is a rectangle' do
+  it 'class inherits from Shape' do
+    expect(Rectangle).to be < Shape
+  end
+
+  it 'new instance is a Rectangle' do
     expect(subject).to be_a(Rectangle)
   end
 
-  it 'has required attributes' do
-    expect(subject.instance_variables).to include(:@num_sides)
-    expect(subject.instance_variables).to include(:@side_length)
+  it 'has attr_reader for length' do
+    expect(subject.length).to eq(4)
+  end
+
+  it 'has attr_reader for width' do
+    expect(subject.width).to eq(10)
+  end
+
+  describe 'attributes' do
+    it 'has required attributes' do
+      expect(subject.instance_variables).to include(:@num_sides)
+      expect(subject.instance_variables).to include(:@length)
+      expect(subject.instance_variables).to include(:@width)
+    end
+
+    it 'attributes have expected values' do
+      expect(subject.num_sides).to eq(4)
+    end
+
+    describe 'given Rectangle.new(3, 4)' do
+      rectangle_instance = Rectangle.new(3, 4)
+      it 'length has correct value' do
+        expect(rectangle_instance.instance_variable_get(:@length)).to eq(3)
+      end
+      it 'width has correct value' do
+        expect(rectangle_instance.instance_variable_get(:@width)).to eq(4)
+      end
+    end
   end
 
   it 'has getters for @num_sides, @side_length' do
@@ -27,10 +56,6 @@ describe 'Rectangle' do
     expect { subject.side_length = 4 }.not_to raise_error
   end
 
-  it 'has the correct area' do
-    expect(subject.calculate_area).to eq(40)
-  end
-
   describe '@color' do
     it 'is not set on initialization' do
       expect(subject.instance_variables).not_to include(:@color)
@@ -42,7 +67,7 @@ describe 'Rectangle' do
     end
   end
 
-  describe '.calculate_area' do
+  describe 'calculate_area' do
     it 'should calculate area for a given side length' do
       expect(Rectangle.new(4, 10).calculate_area.round(2)).to eq(40)
       expect(Rectangle.new(6, 5).calculate_area.round(2)).to eq(30)

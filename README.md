@@ -110,10 +110,10 @@ Please diagram the method lookup chain using the following requirements:
 -   The class `DenverBroncos` has an instance method called `lose`.
 -   `DenverBroncos` inherits from the class `FootballTeam`.
 -   The class `FootballTeam` has an instance method called `play_game`.
--   Diagram creating a new instance of the `DenverBroncos`: `broncos_2015 =
+-   Diagram creating a new instance of the `DenverBroncos`: `broncos_2017 =
     DenverBroncos.new`.
--   Diagram how Ruby finds and executes the methods called on `broncos_2015`:
-    `broncos_2015.lose` and `broncos_2015.play_game`.
+-   Diagram how Ruby finds and executes the methods called on `broncos_2017`:
+    `broncos_2017.lose` and `broncos_2017.play_game`.
 
 ## Lab: Model Shapes Using Classes
 
@@ -125,7 +125,7 @@ A `Rectangle` is a `Shape`, and a `Square` is a `Rectangle`.
 
 Create a `Rectangle` in [`lib/rectangle.rb`](lib/rectangle.rb) that inherits
 from `Shape`. You will need to override the constructor method inside `Rectangle` to take two sides of different lengths. Since all rectangles have four sides,
-you can set a default value for `@sides` inside `Rectangle`'s constructor.
+you can set a default value for `@num_sides` inside `Rectangle`'s constructor.
 
 Test your code with `bin/rake test`.
 
@@ -150,6 +150,9 @@ Requirements for `Square`s:
 ## Additional Resources
 
 -   [Useful links to documentation](https://www.ruby-lang.org/en/documentation/)
+-   [Ruby Classes](http://www.zenruby.info/2016/06/ruby-classes.html)
+-   [Learn Ruby The Hard Way: Inheritance](https://learnrubythehardway.org/book/ex44.html)
+-   [Ruby Class Inheritance](https://launchschool.com/books/oo_ruby/read/inheritance)
 -   [Stack Overflow: Inheriterance](http://stackoverflow.com/questions/15754768/when-do-we-use-ruby-module-vs-using-class-composition)
 
 ## [License](LICENSE)
