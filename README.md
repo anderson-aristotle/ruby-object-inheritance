@@ -4,20 +4,20 @@
 
 ## Prerequisites
 
--   [ga-wdi-boston/ruby-object](https://git.generalassemb.ly/ga-wdi-boston/ruby-object)
+- [ga-wdi-boston/ruby-object](https://git.generalassemb.ly/ga-wdi-boston/ruby-object)
 
 ## Objectives
 
 By the end of this, developers should be able to:
 
--   Diagram the Ruby method lookup chain
--   Write a class which inherits from another class.
+- Diagram the Ruby method lookup chain
+- Write a class which inherits from another class.
 
 ## Preparation
 
-1.  [Fork and clone](https://git.generalassemb.ly/ga-wdi-boston/meta/wiki/ForkAndClone)
+1. [Fork and clone](https://git.generalassemb.ly/ga-wdi-boston/meta/wiki/ForkAndClone)
     this repository.
-1.  Install dependencies with `bundle install`.
+1. Install dependencies with `bundle install`.
 1. Create a `training` branch and checkout to it.
 
 ## Ruby Inheriterance
@@ -107,12 +107,12 @@ then through classes in Ruby.
 
 Please diagram the method lookup chain using the following requirements:
 
--   The class `DenverBroncos` has an instance method called `lose`.
--   `DenverBroncos` inherits from the class `FootballTeam`.
--   The class `FootballTeam` has an instance method called `play_game`.
--   Diagram creating a new instance of the `DenverBroncos`: `broncos_2017 =
+- The class `DenverBroncos` has an instance method called `lose`.
+- `DenverBroncos` inherits from the class `FootballTeam`.
+- The class `FootballTeam` has an instance method called `play_game`.
+- Diagram creating a new instance of the `DenverBroncos`: `broncos_2017 =
     DenverBroncos.new`.
--   Diagram how Ruby finds and executes the methods called on `broncos_2017`:
+- Diagram how Ruby finds and executes the methods called on `broncos_2017`:
     `broncos_2017.lose` and `broncos_2017.play_game`.
 
 ## Lab: Model Shapes Using Classes
@@ -124,39 +124,42 @@ you were asked to create and use a `Shape` class.
 A `Rectangle` is a `Shape`, and a `Square` is a `Rectangle`.
 
 Create a `Rectangle` in [`lib/rectangle.rb`](lib/rectangle.rb) that inherits
-from `Shape`. You will need to override the constructor method inside `Rectangle` to take two sides of different lengths. Since all rectangles have four sides,
-you can set a default value for `@num_sides` inside `Rectangle`'s constructor.
+from `Shape`. You will need to override the constructor method inside
+`Rectangle` to take two sides of different lengths. Since all rectangles have
+four sides, you can set a default value for `@num_sides` inside `Rectangle`'s
+constructor.
 
 Test your code with `bin/rake test`.
 
 Requirements for `Rectangle`s:
 
--   Rectangles should be instantiated with `Rectangle.new(3, 4)` to create a
+- Rectangles should be instantiated with `Rectangle.new(3, 4)` to create a
     rectangle with a length of 3 and a width of 4.
--   Instances of Rectangle should respond to the `#calculate_area` method and give the correct result.
--   Do not override anything that doesn't need to be overriden.
+- Instances of Rectangle should respond to the `#calculate_area` method and
+    give the correct result.
+- Do not override anything that doesn't need to be overriden.
 
 Next, create a `Square` class in [`lib/square.rb`](lib/square.rb`) that inherits
 from `Rectangle`.
 
 Requirements for `Square`s:
 
--   Squares should be instantiated with `Square.new(4)` to create a square with
+- Squares should be instantiated with `Square.new(4)` to create a square with
     all sides equal to 4.
--   Instances of Square should respond to the `#calculate_area` method and give the
+- Instances of Square should respond to the `#calculate_area` method and give the
     correct result.
--   Do not override anything that doesn't need to be overriden.
+- Do not override anything that doesn't need to be overriden.
 
 ## Additional Resources
 
--   [Useful links to documentation](https://www.ruby-lang.org/en/documentation/)
--   [Ruby Classes](http://www.zenruby.info/2016/06/ruby-classes.html)
--   [Learn Ruby The Hard Way: Inheritance](https://learnrubythehardway.org/book/ex44.html)
--   [Ruby Class Inheritance](https://launchschool.com/books/oo_ruby/read/inheritance)
--   [Stack Overflow: Inheriterance](http://stackoverflow.com/questions/15754768/when-do-we-use-ruby-module-vs-using-class-composition)
+- [Useful links to documentation](https://www.ruby-lang.org/en/documentation/)
+- [Ruby Classes](http://www.zenruby.info/2016/06/ruby-classes.html)
+- [Learn Ruby The Hard Way: Inheritance](https://learnrubythehardway.org/book/ex44.html)
+- [Ruby Class Inheritance](https://launchschool.com/books/oo_ruby/read/inheritance)
+- [Stack Overflow: Inheriterance](http://stackoverflow.com/questions/15754768/when-do-we-use-ruby-module-vs-using-class-composition)
 
 ## [License](LICENSE)
 
-1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
-1.  All software code is licensed under GNU GPLv3. For commercial use or
+1. All content is licensed under a CC­BY­NC­SA 4.0 license.
+1. All software code is licensed under GNU GPLv3. For commercial use or
     alternative licensing, please contact legal@ga.co.
