@@ -1,6 +1,6 @@
 [![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
 
-# Object Inheritence in Ruby
+# Object Inheritance in Ruby
 
 ## Prerequisites
 
@@ -20,7 +20,7 @@ By the end of this, developers should be able to:
 1. Install dependencies with `bundle install`.
 1. Create a `training` branch and checkout to it.
 
-## Ruby Inheriterance
+## Ruby Inheritance
 
 In Ruby, we have classes instead of prototypes. We attach methods to the class
 since Ruby doesn't use prototypes. Ruby will be our first example of linking
@@ -137,7 +137,7 @@ Requirements for `Rectangle`s:
     rectangle with a length of 3 and a width of 4.
 - Instances of Rectangle should respond to the `#calculate_area` method and
     give the correct result.
-- Do not override anything that doesn't need to be overriden.
+- Do not override anything that doesn't need to be overridden.
 
 Next, create a `Square` class in [`lib/square.rb`](lib/square.rb`) that inherits
 from `Rectangle`.
@@ -148,7 +148,7 @@ Requirements for `Square`s:
     all sides equal to 4.
 - Instances of Square should respond to the `#calculate_area` method and give the
     correct result.
-- Do not override anything that doesn't need to be overriden.
+- Do not override anything that doesn't need to be overridden.
 
 ## Additional Resources
 
