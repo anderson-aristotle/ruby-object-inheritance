@@ -25,12 +25,11 @@ describe 'Square class' do
     end
 
     describe 'given Square.new(4)' do
-      square_instance = Square.new(4)
       it 'length has correct value' do
-        expect(square_instance.instance_variable_get(:@length)).to eq(4)
+        expect(Square.new(4).length).to eq(4)
       end
       it 'width has correct value' do
-        expect(square_instance.instance_variable_get(:@width)).to eq(4)
+        expect(Square.new(4).width).to eq(4)
       end
     end
   end
