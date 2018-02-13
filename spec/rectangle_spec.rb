@@ -33,12 +33,11 @@ describe 'Rectangle class' do
     end
 
     describe 'given Rectangle.new(3, 4)' do
-      rectangle_instance = Rectangle.new(3, 4)
       it 'length has correct value' do
-        expect(rectangle_instance.instance_variable_get(:@length)).to eq(3)
+        expect(Rectangle.new(3, 4).length).to eq(3)
       end
       it 'width has correct value' do
-        expect(rectangle_instance.instance_variable_get(:@width)).to eq(4)
+        expect(Rectangle.new(3, 4).width).to eq(4)
       end
     end
   end

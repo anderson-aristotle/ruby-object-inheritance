@@ -34,7 +34,7 @@ class DenverBroncos < FootballTeam
   end
 end
 
-broncos_2017 = DenverBroncos.new
+broncos2017 = DenverBroncos.new
 
-broncos_2017.lose
-broncos_2017.play_game
+broncos2017.lose
+broncos2017.play_game
