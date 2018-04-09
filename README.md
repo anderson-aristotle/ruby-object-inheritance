@@ -156,7 +156,7 @@ Requirements for `Square`s:
 - [Ruby Classes](http://www.zenruby.info/2016/06/ruby-classes.html)
 - [Learn Ruby The Hard Way: Inheritance](https://learnrubythehardway.org/book/ex44.html)
 - [Ruby Class Inheritance](https://launchschool.com/books/oo_ruby/read/inheritance)
-- [Stack Overflow: Inheriterance](http://stackoverflow.com/questions/15754768/when-do-we-use-ruby-module-vs-using-class-composition)
+- [Stack Overflow: Inheritance](http://stackoverflow.com/questions/15754768/when-do-we-use-ruby-module-vs-using-class-composition)
 
 ## [License](LICENSE)
 
