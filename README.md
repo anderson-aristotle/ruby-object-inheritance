@@ -95,13 +95,12 @@ I can move by flying
 `Super` will call the same method defined in the `parent` or `superclass` and
 give you the result.
 
-## Demo: Drawing the Method Lookup Chain in Ruby and JavaScript
+## Demo: Drawing the Method Lookup Chain in Ruby
 
 In Ruby, method lookup occurs through classes. In JavaScript, method lookup
 occurs through inspecting the `.prototype` property on constructor functions.
 
-Let's draw the method lookup chain, first through prototypes in JavaScript, and
-then through classes in Ruby.
+Let's draw the method lookup chain through classes in Ruby.
 
 ## Lab: Drawing the Method Lookup Chain in Ruby
 
