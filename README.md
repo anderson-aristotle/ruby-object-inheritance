@@ -66,6 +66,20 @@ animal.eat #=> "Nom nom nom"
 animal.speak #=> NoMethodError
 ```
 
+## Concrete classes vs Abstract classes
+
+In Ruby and programming in general, there is a concept of Concrete and Abstract
+classes. There is no difference in defining these classes, the distinction
+comes from how they are used.
+
+Concrete classes are classes that you plan on making instances of. Where
+Abstract classes are more general, and are used to share commonalities to a set
+of other sub-classes.
+
+For instance, in the above example we probably won't be creating instances of
+the Animal class, it is too broad. We just want to use it to share the eat
+method with other sub-classes of Animal.
+
 ## Ruby: Super Inheritance
 
 ```ruby
