@@ -66,6 +66,20 @@ animal.eat #=> "Nom nom nom"
 animal.speak #=> NoMethodError
 ```
 
+## Concrete classes vs Abstract classes
+
+In Ruby and programming in general, there is a concept of Concrete and Abstract
+classes. There is no difference in defining these classes, the distinction
+comes from how they are used.
+
+Concrete classes are classes that you plan on making instances of. Where
+Abstract classes are more general, and are used to share commonalities to a set
+of other sub-classes.
+
+For instance, in the above example we probably won't be creating instances of
+the Animal class, it is too broad. We just want to use it to share the eat
+method with other sub-classes of Animal.
+
 ## Ruby: Super Inheritance
 
 ```ruby
@@ -95,25 +109,24 @@ I can move by flying
 `Super` will call the same method defined in the `parent` or `superclass` and
 give you the result.
 
-## Demo: Drawing the Method Lookup Chain in Ruby and JavaScript
+## Demo: Drawing the Method Lookup Chain in Ruby
 
 In Ruby, method lookup occurs through classes. In JavaScript, method lookup
 occurs through inspecting the `.prototype` property on constructor functions.
 
-Let's draw the method lookup chain, first through prototypes in JavaScript, and
-then through classes in Ruby.
+Let's draw the method lookup chain through classes in Ruby.
 
 ## Lab: Drawing the Method Lookup Chain in Ruby
 
 Please diagram the method lookup chain using the following requirements:
 
-- The class `DenverBroncos` has an instance method called `lose`.
-- `DenverBroncos` inherits from the class `FootballTeam`.
-- The class `FootballTeam` has an instance method called `play_game`.
-- Diagram creating a new instance of the `DenverBroncos`: `broncos2017 =
-    DenverBroncos.new`.
-- Diagram how Ruby finds and executes the methods called on `broncos2017`:
-    `broncos2017.lose` and `broncos2017.play_game`.
+- The class `FamilyFeud` has an instance method called `fast_money`.
+- `FamilyFeud` inherits from the class `TVShow`.
+- The class `TVShow` has an instance method called `roll_credits`.
+- Diagram creating a new instance of the `FamilyFeud`: `steve_harvey_family_feud =
+    FamilyFeud.new`.
+- Diagram how Ruby finds and executes the methods called on `steve_harvey_family_feud`:
+    `steve_harvey_family_feud.fast_money` and `steve_harvey_family_feud.roll_credits`.
 
 ## Lab: Model Shapes Using Classes
 
@@ -134,9 +147,9 @@ Test your code with `bin/rake test`.
 Requirements for `Rectangle`s:
 
 - Rectangles should be instantiated with `Rectangle.new(3, 4)` to create a
-    rectangle with a length of 3 and a width of 4.
+  rectangle with a length of 3 and a width of 4.
 - Instances of Rectangle should respond to the `#calculate_area` method and
-    give the correct result.
+  give the correct result.
 - Do not override anything that doesn't need to be overridden.
 
 Next, create a `Square` class in [`lib/square.rb`](lib/square.rb`) that inherits
@@ -145,9 +158,9 @@ from `Rectangle`.
 Requirements for `Square`s:
 
 - Squares should be instantiated with `Square.new(4)` to create a square with
-    all sides equal to 4.
-- Instances of Square should respond to the `#calculate_area` method and give the
-    correct result.
+  all sides equal to 4.
+- Instances of Square should respond to the `#calculate_area` method and give
+  the correct result.
 - Do not override anything that doesn't need to be overridden.
 
 ## Additional Resources
