@@ -5,7 +5,7 @@ require_relative '../lib/square.rb'
 describe 'Square class' do
   subject(:square) { Square.new(4) }
 
-  it 'class inherits from Rectangle' do
+  it 'inherits from Rectangle' do
     expect(Square).to be < Rectangle
   end
 

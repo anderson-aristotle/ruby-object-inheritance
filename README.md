@@ -142,7 +142,7 @@ from `Shape`. You will need to override the constructor method inside
 four sides, you can set a default value for `@num_sides` inside `Rectangle`'s
 constructor.
 
-Test your code with `bin/rake test`.
+Test your code with `bundle exec rspec`.
 
 Requirements for `Rectangle`s:
 
