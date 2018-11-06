@@ -5,7 +5,7 @@ require_relative '../lib/rectangle.rb'
 describe 'Rectangle class' do
   subject(:rectangle) { Rectangle.new(4, 10) }
 
-  it 'class inherits from Shape' do
+  it 'inherits from Shape' do
     expect(Rectangle).to be < Shape
   end
 

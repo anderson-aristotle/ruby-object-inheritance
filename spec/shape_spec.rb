@@ -2,7 +2,7 @@
 
 require_relative '../lib/shape.rb'
 
-describe 'Shape' do
+describe 'Shape class' do
   subject(:shape) { Shape.new(4, 10) }
 
   it 'is a shape' do
